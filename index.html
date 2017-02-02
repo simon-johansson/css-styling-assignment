@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  .inner-circle,.outer-circle{width:100px;border-radius:100%}body{height:2500px}.two-colors{font-weight:700;color:brown}.two-colors span{color:tomato}.outer-circle{height:100px;background:gold;padding:100px;box-shadow:5px 5px 5px rgba(0,0,0,.4)}.inner-circle{height:100px;background:#0f0;margin:auto}.border-box{width:200px;height:100px;border-top:10px dotted red;border-right:10px solid brown;border-left:10px solid brown;border-top-right-radius:50px;border-top-left-radius:50px}.vertical-aligend{width:200px;height:200px;border:2px solid #000;text-align:center;line-height:200px}.floating{width:500px;height:20px;border:1px solid #000}.floating .left{float:left;margin-left:10px}.floating .right{float:right;margin-right:10px}.transition-div{width:200px;height:200px;background:red;text-align:center;transition:all .5s}.transition-div span{line-height:200px;color:#fff;font-size:35px;transition:all .5s}.transition-div:hover{background:green;border-radius:100%}.transition-div:hover span{opacity:0}.absolute-position{position:relative;width:200px;height:200px;background:#0f0}.absolute-position div{position:absolute;width:100px;height:100px;border-radius:100%}.absolute-position div:nth-child(1){top:0;left:0;background:tomato}.absolute-position div:nth-child(2){top:50px;left:50px;background:gold}.absolute-position div:nth-child(3){top:100px;left:100px;background:pink}.color-rows div{width:200px;height:20px}.color-rows div:nth-child(odd){background:red}.color-rows div:nth-child(even){background:#00f}.animated{width:100px;height:100px;background-color:red;position:relative;animation-name:example;animation-duration:4s;animation-iteration-count:infinite;animation-direction:reverse}@keyframes example{0%,100%{background-color:red;left:0;top:0}25%{background-color:#ff0;left:200px;top:0}50%{background-color:#00f;left:200px;top:200px}75%{background-color:green;left:0;top:200px}}
+  </style>
+</head>
+<body>
+
+<h1>1</h1>
+<p class="two-colors">This is some text with <span>another color</span> inside the text</p>
+
+<h1>2</h1>
+Use only margin & padding to position the inner circle
+<br />
+<br />
+<div class="outer-circle">
+  <div class="inner-circle"></div>
+</div>
+
+<h1>3</h1>
+Secret tip: This is a <code>div</code> with borders
+<br />
+<br />
+<div class="border-box">
+</div>
+
+<h1>4</h1>
+<div class="vertical-aligend">
+  <span>Vertical aligned</span>
+</div>
+
+<h1>5</h1>
+Use <code>float</code> to position the text elements
+<br />
+<br />
+<div class="floating">
+  <span class="left">To the left</span>
+  <span class="right">To the right</span>
+</div>
+
+<h1>6</h1>
+<div class="transition-div">
+  <span>Hover me!</span>
+</div>
+
+<h1>7</h1>
+Use <code>position: absolute;</code> to position the balls
+<br />
+<br />
+<div class="absolute-position">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<h1>8</h1>
+Use <code>:nth-child()</code> to color the rows. You are not allowed to put classes or id:s on the rows
+<br />
+<br />
+<div class="color-rows">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<h1>9</h1>
+CSS animation with <code>@keyframes</code>
+<br />
+<br />
+<div class="animated">
+</div>
+
+</body>
+</html>
